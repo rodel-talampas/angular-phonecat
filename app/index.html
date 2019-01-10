@@ -1,14 +1,19 @@
 <!doctype html>
-<html lang="en" ng-app>
-  <head>
-    <meta charset="utf-8">
-    <title>My HTML File</title>
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
-    <script src="lib/angular/angular.js"></script>
-  </head>
-  <body>
+<html ng-app="phonecatApp" ng-cloak>
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <script src="lib/angular/angular.js"></script>
+  <script src="app.module.js"></script>
+  <script src="keycloak/keycloak.js"></script>
+  <script src="keycloak/keycloak.module.js"></script>
+  <script src="phone-list/phone-list.module.js"></script>
+  <script src="phone-list/phone-list.component.js"></script>
+</head>
+<body ng-cloak>
+  <!-- Use a custom component to render a list of phones -->
+  <h1> WELCOME to my SITE </h1>
+  <phone-list></phone-list>  <!-- This tells AngularJS to instantiate a `phoneList` component here. -->
 
-    <p>Nothing here {{'yet' + '!'}}</p>
-
-  </body>
+</body>
 </html>
